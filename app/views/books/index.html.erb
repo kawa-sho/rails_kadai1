@@ -1,4 +1,9 @@
+<div class=index>
 <h1>Books</h1>
+<div class=midashi>
+    <p class="midashi-Title">Title</p>
+    <p class="midashi-body">Body</p>
+</div>
 <div class="book-wrap">
 <% @books.each do |book| %>
   <div class="book-box">
@@ -11,4 +16,24 @@
     </div>
   </div>
 <% end %>
+</div>
+
+<h2>New book</h2>
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>件のエラーが発生しました
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_with model: @book, url: '/books', method: :post do |f| %>
+  <p>Title</p>
+  <%= f.text_field :title %>
+  <p>body</p>
+  <%= f.text_area :body %>
+  <%= f.submit 'Create Book' %>
+<% end %>
+
 </div>
