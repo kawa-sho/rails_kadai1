@@ -1,42 +1,76 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+//zentai
 * {
   margin: 0;
   padding: 0;
   box-siziing: border-box;
 }
 
-.index {
+body {
     margin: 33px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    line-height: 18px;
     color: #333333;
 }
 
 h1 {
     font-size: 26px;
-    margin: 17.42px 0px;
+    margin: 17.42px 0;
 }
+
+h2 {
+    font-size: 19.5px;
+    margin: 16.185px 0;
+}
+
+//index
 
 .midashi p {
     display: inline-block;
+    font-weight: bold;
     margin: 0;
     padding: 1px 1px 5px;
 }
 
-.book-title {
-    position: relative;
+.book-comment {
+    font-size: 13px;
+    padding: 1px 5px 7px;
 }
 
-.midashi-title {
-    position: absolute;
-    left: 50%;
+.form {
+    font-size: 13px;
 }
 
-.book-body {
-    position: relative;
+.form p {
+    margin: 0;
 }
 
-.midashi-body {
-    position: absolute;
-    left: 50%;
+.form-item {
+    margin-bottom: 10px;
 }
+
+.form-item:nth-child(1) input{
+    padding: 1px 2px;
+}
+
+.form-item:nth-child(2) textarea{
+    padding: 2px;
+}
+
+.form-item:nth-child(3) input{
+    padding: 1px 6px;
+}
+
+//show
+
+.show-link {
+    font-size: 13px;
+}
+
+
+
+
