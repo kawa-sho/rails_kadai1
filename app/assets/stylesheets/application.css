@@ -13,9 +13,12 @@
  *= require_tree .
  *= require_self
  */
+.link:hover {
+  color: white;
+  background-color: black;
+}
 
-
-.notifications {
+.notice {
   color: #008000;
   margin: 33px;
 }
